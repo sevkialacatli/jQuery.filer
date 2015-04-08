@@ -31,6 +31,7 @@ Browser Support
 * Opera 11.1+
 * Maxthon 3.4+
 * Internet Explorer 10+
+* and others that supports HTML5
 
 Server support
 -------
@@ -41,7 +42,7 @@ Server support
 * Perl
 * Rails
 * Python
-* and others that supports standart HTML form file uploads...
+* and others that supports standart HTML form file uploads
 
 Usage
 -------
