@@ -450,7 +450,7 @@
                                 statusCode: n.uploadFile.statusCode,
                                 cache: false,
                                 contentType: false,
-                                processData: false,
+                                processData: false
                             });
                             return c.ajax;
                         },
@@ -735,7 +735,7 @@
                             file: f.files[i],
                             html: $(),
                             ajax: false,
-                            uploaded: false,
+                            uploaded: false
                         });
                         f._itFc = f._itFl[f._itFl.length - 1];
                     },
@@ -807,7 +807,7 @@
                     files: null,
                     _itFl: [],
                     _itFc: null,
-                    _ajFc: 0,
+                    _ajFc: 0
                 }
 
             f.init();
@@ -852,7 +852,7 @@
                 list: null,
                 item: null,
                 progressBar: null,
-                remove: null,
+                remove: null
             }
         },
         files: null,
