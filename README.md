@@ -298,7 +298,8 @@ Questions or need help? You can ask it by writing us an <a href="mailto:contact@
 
 If you run into an issue and need to report a bug or you just have a question, please create an <a href="https://github.com/CreativeDream/jquery.filer/issues" target="_blank">Issue</a> on GitHub issues and we will investigate it.
 
-### PHP File Uploader ###
+PHP File Uploader
+-------
 PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link below.
 <br>
 <b><a href="https://github.com/CreativeDream/php-uploader" target="blank">PHP Uploader</a></b>
