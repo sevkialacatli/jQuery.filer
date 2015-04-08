@@ -360,7 +360,8 @@
                                         '-webkit-box-shadow': h,
                                         '-moz-box-shadow': h,
                                         'box-shadow': h
-                                    });
+                                    }).attr('style', '-webkit-box-shadow: ' +  h + '; -moz-box-shadow: ' +  h + '; box-shadow: ' +  h + ';');
+                                    
                                     el = j.prop('outerHTML');
                                     j.remove();
                                 }
