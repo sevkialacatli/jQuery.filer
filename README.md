@@ -29,7 +29,19 @@ Browser Support
 * Firefox 3.6+
 * Safari 6+
 * Opera 11.1+
+* Maxthon 3.4+
 * Internet Explorer 10+
+
+Server support
+-------
+* ASP.NET
+* ColdFusion
+* Node.js
+* PHP
+* Perl
+* Rails
+* Python
+* and others that supports standart HTML form file uploads...
 
 Usage
 -------
@@ -186,7 +198,7 @@ __Options:__
 * __limit__ Maximum Limit of files. {null, Number}
 * __maxSize__ Maximum Size of files. {null, Number(in MB's)}
 * __extensions__ Whitelist for file extension. {null, Array}
-* __changeInput__ Change input. {Boolean, String(DOM Element), Object(DOM Element)}
+* __changeInput__ Change input. {Boolean, String(HTML element), Object(DOM Element)}
 * __showThumbs__ Show input files as thumbnails. {Boolean}
 * __appendTo__ Append thumbnails to element. {null, String(Dom Element)}
 * __theme__ jQuery.filer theme. {null, String}
@@ -258,7 +270,7 @@ __Attributes:__
 
 Filer Variables
 -------
-Filer Variables are created for simple usage them in the plugin string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available combinations that can be used:
+Filer Variables are very simple to use in filer string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available combinations that can be used:
 * fi-name
 * fi-size
 * fi-size2
@@ -275,9 +287,15 @@ Filer Variables are created for simple usage them in the plugin string options. 
 Contribute
 -------
 Want to be part of this project? Great! All are welcome!
-Whether you find a bug, have a great feature request or you fancy owning a task from the road map above feel free to get in touch.
+Whether you have a great feature request or you fancy owning a task from the road map above feel free to get in touch.
 <br>
-By <b>themes</b> you can contribute to plugin by making a Pull Request to <i>/css/themes/</i> and writing a short description containing plugin templates options.
+By <b>themes</b> you can contribute to plugin by making a <a href="https://github.com/CreativeDream/jquery.filer/pulls" target="_blank">Pull Request</a> to <i>/css/themes/</i> and writing a short description containing plugin templates options.
+
+Support
+-------
+Questions or need help? You can ask it by writing us an <a href="mailto:contact@creativedream.net">Email</a>  or using <a href="http://stackoverflow.com/questions/ask?tags=jQuery,jquery.filer" target="_blank">StackOverflow</a> site where you are most likely to get answer quickly. Make sure you add the tags "jquery" and "jquery.filer" when posting.
+
+If you run into an issue and need to report a bug or you just have a question, please create an <a href="https://github.com/CreativeDream/jquery.filer/issues" target="_blank">Issue</a> on GitHub issues and we will investigate it.
 
 ### PHP File Uploader ###
 PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link below.
