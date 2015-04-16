@@ -4,6 +4,8 @@ jQuery.filer - Simple HTML5 File Uploader, a plugin tool for jQuery which change
 
 <b><a href="http://creativedream.net/jquery.filer/#demos" target="blank">Demo</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#options--features">Documentation</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#support">Support</a></b>
 
+![Cover](http://creativedream.net/jquery.filer/cover.jpg "jQuery.filer")
+
 Features
 -------
 * Completely change File Input
