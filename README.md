@@ -68,7 +68,7 @@ __HTML:__
 
 Create an input file element.
 ~~~~ html
-<form action="upload.php" method="post" enctype="multipart/form-data">
+<form action="./php/upload.php" method="post" enctype="multipart/form-data">
     <input type="file" name="files[]" id="input_file" multiple="multiple">
     <input type="submit">
 </form>
@@ -142,7 +142,7 @@ $(document).ready(function() {
             }
         },
         uploadFile: {
-            url: "upload.php",
+            url: "./php/upload.php",
             data: {},
             type: 'POST',
             enctype: 'multipart/form-data',
@@ -303,8 +303,7 @@ If you run into an issue and need to report a bug or you just have a question, p
 PHP File Uploader
 -------
 PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link below.
-<br>
-<b><a href="https://github.com/CreativeDream/php-uploader" target="blank">PHP Uploader</a></b>
+<br><b><a href="https://github.com/CreativeDream/php-uploader" target="blank">PHP Uploader</a></b>
 
 License
 -------
