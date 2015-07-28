@@ -2,9 +2,9 @@ jQuery.filer 1.0.2
 ============
 jQuery.filer - Simple HTML5 File Uploader, a plugin tool for jQuery which change completely File Input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, print-screen upload and many other features and options.
 
-<b><a href="http://creativedream.net/jquery.filer/#demos" target="blank">Demo</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#options--features">Documentation</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#support">Support</a></b>
+<b><a href="http://grandesign.md/__cr/jquery.filer/#demos" target="blank">Demo</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#options--features">Documentation</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#support">Support</a></b>
 
-![Cover](http://creativedream.net/jquery.filer/cover.jpg "jQuery.filer")
+![Cover](http://grandesign.md/__cr/jquery.filer/cover.jpg "jQuery.filer")
 
 Features
 -------
