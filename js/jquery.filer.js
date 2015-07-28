@@ -2,7 +2,7 @@
  * jQuery.filer
  * Copyright (c) 2015 CreativeDream
  * Website: http://creativedream.net/plugins/jquery.filer
- * Version: 1.0.1 (30-03-2015)
+ * Version: 1.0.2 (28-07-2015)
  * Requires: jQuery v1.7.1 or later
  */
 (function($) {
@@ -165,7 +165,7 @@
                         f._itFl = [];
                         f._itFc = null;
                         f._ajFc = 0;
-                        p.find("input[name^='jfiler-items-exclude-']:hidden").remove();
+                        if(!f._prEr) p.find("input[name^='jfiler-items-exclude-']:hidden").remove();
                         l.fadeOut("fast", function() {
                             $(this).remove();
                         });
@@ -691,9 +691,14 @@
                                 } else {
                                     val = JSON.parse(input.val());
                                 }
-                                val.push(file.name);
-                                val = JSON.stringify(val);
-                                input.val(val);
+                                
+                                if(file._appended || f._itFl[id].uploaded){
+                                    f._prEr = true;
+                                    
+                                    val.push(file.name);
+                                    val = JSON.stringify(val);
+                                    input.val(val);
+                                }
                             },
                             callback = function(el, id) {
                                 excl_input(id);
@@ -807,7 +812,8 @@
                     files: null,
                     _itFl: [],
                     _itFc: null,
-                    _ajFc: 0
+                    _ajFc: 0,
+                    _prEr: false
                 }
 
             f.init();
