@@ -5,8 +5,6 @@ jQuery.filer - Simple HTML5 File Uploader, a plugin tool for jQuery which change
 <b><a href="http://grandesign.md/__cr/jquery.filer/#demos" target="blank">Demo</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#options--features">Documentation</a></b> | <b><a href="https://github.com/CreativeDream/jquery.filer#support">Support</a></b>
 
 ![Cover](http://grandesign.md/__cr/jquery.filer/cover.jpg "jQuery.filer")
-<br>
-<p align="center">Examples of using: <a href="http://grandesign.md/__cr/jquery.filer/flyer2.png" target="_blank">Image 1</a> | <a href="http://grandesign.md/__cr/jquery.filer/flyer1.png" target="_blank">Image 2</a> | <a href="http://grandesign.md/__cr/jquery.filer/flyer3.png" target="_blank">Image 3</a></p>
 
 Features
 -------
