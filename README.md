@@ -296,7 +296,7 @@ By <b>themes</b> you can contribute to plugin by making a <a href="https://githu
 
 Support
 -------
-Questions or need help? You can ask it by writing us an <a href="mailto:contact@creativedream.net">Email</a>  or using <a href="http://stackoverflow.com/questions/ask?tags=jQuery,jquery.filer" target="_blank">StackOverflow</a> site where you are most likely to get answer quickly. Make sure you add the tags "jquery" and "jquery.filer" when posting.
+Questions or need help? You can ask it using <a href="http://stackoverflow.com/questions/ask?tags=jQuery,jquery.filer" target="_blank">StackOverflow</a> site where you are most likely to get answer quickly. Make sure you add the tags "jquery" and "jquery.filer" when posting.
 
 If you run into an issue and need to report a bug or you just have a question, please create an <a href="https://github.com/CreativeDream/jquery.filer/issues" target="_blank">Issue</a> on GitHub issues and we will investigate it.
 
