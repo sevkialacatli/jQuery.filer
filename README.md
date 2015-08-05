@@ -58,7 +58,7 @@ Include the jquery.filer css file in your html page.
 
 __Scripts:__
 
-Include the jQuery library and jquery.filer script file in your html page.
+Include the jQuery library and jquery.filer script file in your html page. 
 ~~~~ html
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="./js/jquery.filer.min.js"></script>
@@ -76,7 +76,7 @@ Create an input file element.
 
 __Javascript:__
 
-The plugin is named "filer" and can be applied to any element. You will probably also specify some options while applying the plugin.
+The plugin is named "filer" and can be applied to any element. You will probably also specify some options while applying the plugin. If you are not familiar with jQuery, please, read this <a href="http://learn.jquery.com/about-jquery/how-jquery-works/" target="_blank">tutorial for beginners</a>.
 ~~~~ javascript
 $(document).ready(function() {
 	$('#input_file').filer({
