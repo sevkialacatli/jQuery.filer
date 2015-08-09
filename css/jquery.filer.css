@@ -344,7 +344,7 @@ span.jFiler-icon-file.f-audio:after {
 .jFiler-item .jFiler-item-container .jFiler-item-info .jFiler-item-title {
     display: block;
     font-weight: bold;
-    word-break: break-word;
+    word-break: break-all;
     line-height: 1;
 }
 
