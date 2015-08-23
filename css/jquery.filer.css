@@ -325,7 +325,7 @@ span.jFiler-icon-file.f-audio:after {
     background: linear-gradient(to top,rgba(0,0,0,1) 0,rgba(0,0,0,0) 100%);
     z-index: 9;
     opacity: 0;
-    filter: aplpha(opacity(0));
+    filter: alpha(opacity(0));
     -webkit-transition: all 0.12s;
     -moz-transition: all 0.12s;
     transition: all 0.12s;
@@ -344,7 +344,7 @@ span.jFiler-icon-file.f-audio:after {
 .jFiler-item .jFiler-item-container .jFiler-item-info .jFiler-item-title {
     display: block;
     font-weight: bold;
-    word-break: break-word;
+    word-break: break-all;
     line-height: 1;
 }
 
