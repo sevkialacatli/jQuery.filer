@@ -1,8 +1,8 @@
 /*!
  * jQuery.filer
  * Copyright (c) 2015 CreativeDream
- * Website: http://creativedream.net/plugins/jquery.filer
- * Version: 1.0.2 (28-07-2015)
+ * Website: https://github.com/CreativeDream/jquery.filer
+ * Version: 1.0.3 (26-Aug-2015)
  * Requires: jQuery v1.7.1 or later
  */
 (function($) {
@@ -165,7 +165,10 @@
                         f._itFl = [];
                         f._itFc = null;
                         f._ajFc = 0;
-                        if(!f._prEr) p.find("input[name^='jfiler-items-exclude-']:hidden").remove();
+                        if(!f._prEr){
+                            f._itFr = [];
+                            p.find("input[name^='jfiler-items-exclude-']:hidden").remove();
+                        }
                         l.fadeOut("fast", function() {
                             $(this).remove();
                         });
@@ -393,6 +396,7 @@
                                 });
                             }
                             for (var i = 0; i < f.files.length; i++) {
+                                if(!f.files[i]._appended) f.files[i]._choosed = true;
                                 f._addToMemory(i);
                                 f._thumbCreator.create(i);
                             }
@@ -432,8 +436,8 @@
                                     c.ajax = false;
                                     f._ajFc++;
                                     if(f._ajFc >= f.files.length){
+                                        f._ajFc = 0;
                                         n.uploadFile.onComplete != null && typeof n.uploadFile.onComplete == "function" ? n.uploadFile.onComplete(l, p, o, s, jqXHR, textStatus) : null;
-                                        f._ajFc = 0;   
                                     }
                                 },
                                 beforeSend: function(jqXHR, settings) {
@@ -599,6 +603,7 @@
                             f._thumbCreator._box();
                         } else {
                             for (var i = 0; i < f.files.length; i++) {
+                                f.files[i]._choosed = true;
                                 f._addToMemory(i);
                                 f._onSelect(i);
                             }
@@ -682,20 +687,38 @@
                             id = null,
                             excl_input = function(id) {
                                 var input = p.find("input[name^='jfiler-items-exclude-']:hidden").first(),
-                                    file = f._itFl[id].file,
+                                    item = f._itFl[id],
                                     val = [];
 
                                 if (input.size() == 0) {
                                     input = $('<input type="hidden" name="jfiler-items-exclude-' + (n.excludeName ? n.excludeName : (s.attr("name").slice(-2) != "[]" ? s.attr("name") : s.attr("name").substring(0, s.attr("name").length - 2)) + "-" + t) + '">');
                                     input.appendTo(p);
-                                } else {
-                                    val = JSON.parse(input.val());
                                 }
                                 
-                                if(file._appended || f._itFl[id].uploaded){
+                                if(item.file._choosed || item.file._appended || item.uploaded){
                                     f._prEr = true;
+                                    f._itFr.push(item);
+
+                                    if(n.addMore){
+                                        var current_input = item.input,
+                                            count_same_input = 0;
+                                        f._itFl.filter(function(val, index){
+                                            if(val.file._choosed && val.input.get(0) == current_input.get(0)) count_same_input++;
+                                        });
+
+                                        if(count_same_input == 1){
+                                            f._itFr = f._itFr.filter(function(val, index){
+                                                return val.file._choosed ? val.input.get(0) != current_input.get(0) : true;
+                                            });
+                                            current_input.val("");
+                                            f._prEr = false;
+                                        }
+                                    }
                                     
-                                    val.push(file.name);
+                                    for(var i = 0; i<f._itFr.length; i++){
+                                        val.push(f._itFr[i].file.name);
+                                    }
+                                    
                                     val = JSON.stringify(val);
                                     input.val(val);
                                 }
@@ -740,8 +763,9 @@
                             file: f.files[i],
                             html: $(),
                             ajax: false,
-                            uploaded: false
+                            uploaded: false,
                         });
+                        if(n.addMore && !f.files[i]._appended) f._itFl[f._itFl.length - 1].input = s;
                         f._itFc = f._itFl[f._itFl.length - 1];
                     },
 
@@ -812,6 +836,7 @@
                     files: null,
                     _itFl: [],
                     _itFc: null,
+                    _itFr: [],
                     _ajFc: 0,
                     _prEr: false
                 }
