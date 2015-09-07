@@ -171,6 +171,7 @@ $(document).ready(function() {
         addMore: true,
         clipBoardPaste: true,
         excludeName: null,
+        files: null,
         beforeShow: function(){return true},
         onSelect: function(){},
         afterShow: function(){},
