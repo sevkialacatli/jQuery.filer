@@ -235,6 +235,7 @@ __Options:__
 * __addMore__ Multiple file selection without instant uploading {Boolean}
 * __clipBoardPaste__ Printscreen paste and upload {Boolean}
 * __excludeName__ Removed files input name {null, String} Default: jfiler-items-exclude-(input file name)-(input index)
+* __files__ Already uploaded files list {null, Array} Ex: [{"name":"appended_file.jpg","size":5453,"type":"image/jpg",file:"/path/to/file/appended_file.jpg"}]
 * __beforeShow__ A function that is fired before showing thunbnails {Function}
 * __onSelect__ A function that is fired after selecting files {Function}
 * __afterShow__ A function that is fired after appending all thumbnails items {Function}
