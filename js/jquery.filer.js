@@ -866,7 +866,6 @@
 					_ajFc: 0,
 					_prEr: false
 				}
-			f.init();
 			s.prop("jFiler", {
 				options: n,
 				listEl: l,
@@ -899,6 +898,7 @@
 					return f._retryUpload(data);
 				}
 			});
+			f.init();
 			s.on("filer.append", function(e, data) {
 				f._append(e, data)
 			});
