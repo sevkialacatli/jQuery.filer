@@ -614,11 +614,10 @@
 							}
 							f.files = d;
 						}
-						s.prop("jFiler")
-							.files = f.files;
 						if (!n.uploadFile && !n.addMore) {
 							f._reset(true);
 						}
+						s.prop("jFiler").files = f.files;
 						if (!f._filesCheck() || (n.beforeSelect != null && typeof n.beforeSelect == "function" ? !n.beforeSelect(f.files, l, p, o, s) : false)) {
 							f._set('input', '');
 							f._clear();
@@ -898,7 +897,7 @@
 					return f._retryUpload(data);
 				}
 			});
-			f.init();
+			
 			s.on("filer.append", function(e, data) {
 				f._append(e, data)
 			});
@@ -917,6 +916,9 @@
 			s.on("filer.retry", function(e, data) {
 				return f._retryUpload(e, data)
 			});
+			
+			f.init();
+			
 			return this;
 		});
 	};
