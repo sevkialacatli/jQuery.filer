@@ -1,13 +1,13 @@
 {
   "name": "jquery.filer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "js/jquery.filer.min.js",
   "ignore": [
     "**/.*",
     "bower_components",
     "test"
   ],
-  "homepage": "https://github.com/CreativeDream/jquery.filer",
+  "homepage": "https://filer.grandesign.md/",
   "authors": [
     "CreativeDream <yuliangagarin@mail.ru>"
   ],
