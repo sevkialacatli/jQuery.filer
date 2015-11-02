@@ -8,7 +8,7 @@
         'extensions' => null, //Whitelist for file extension. {null, Array(ex: array('jpg', 'png'))}
         'required' => false, //Minimum one file is required for upload {Boolean}
         'uploadDir' => '../uploads/', //Upload directory {String}
-        'title' => array('auto', 10), //New file name {null, String, Array} *please read documentation in README.md
+        'title' => array('name'), //New file name {null, String, Array} *please read documentation in README.md
         'removeFiles' => true, //Enable file exclusion {Boolean(extra for jQuery.filer), String($_POST field name containing json data with file names)}
         'perms' => null, //Uploaded file permisions {null, Number}
         'onCheck' => null, //A callback function name to be called by checking a file for errors (must return an array) | ($file) | Callback
