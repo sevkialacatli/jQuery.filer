@@ -100,6 +100,8 @@ $(document).ready(function() {
         addMore: false,
         clipBoardPaste: true,
         excludeName: null,
+        beforeRender: null,
+        afterRender: null,
         beforeShow: null,
         beforeSelect: null,
         onSelect: null,
@@ -109,6 +111,7 @@ $(document).ready(function() {
             $.post('./php/remove_file.php', {file: file});
         },
         onEmpty: null,
+        options: null,
         captions: {
             button: "Choose Files",
             feedback: "Choose files To Upload",
