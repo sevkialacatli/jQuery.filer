@@ -45,7 +45,7 @@ If you run into an issue and need to report a bug or you just have a question, p
 
 Follow <a href="http://twitter.com/increativedream">@creativedream</a> for the latest updates.
 
-<b>Make a donation</b> - jQuery.filer is free and open source and your donations will help us to develop it. You can support our project by donating with PayPal. All contributions, small or great, are very much appreciated.  Спасибо! Mulţumesc! Danke! Thank you!
+<b>Make a donation</b> - jQuery.filer is free and open source and your donations will help us to develop it. You can support our project by donating with PayPal. All contributions, small or great, are very much appreciated. Thank you!
 <br><br>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WFVGJ66RW22GJ" target="_blank"><img src="http://grandesign.md/__cr/1445905675_paypal-curved.png"></a>
 
