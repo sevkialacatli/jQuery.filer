@@ -770,7 +770,7 @@
 							};
 						for(var key in f._itFl) {
 							if(key === 'length' || !f._itFl.hasOwnProperty(key)) continue;
-							if(f._itFl[key].file.id == attrId) {
+							if(f._itFl[key].file.id == attrId || f._itFl[key].id == key ) {
 								id = key;
 							}
 						}
